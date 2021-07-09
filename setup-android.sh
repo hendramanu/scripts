@@ -36,11 +36,11 @@ fi
 
 # Clone compiler
 # AOSP Clang 4639204
-wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/android-9.0.0_r6/clang-4639204.tar.gz && mkdir clang-4639204 && tar -zxvf clang-4639204.tar.gz -C clang-4639204 && rm clang-4639204.tar.gz.tar.gz
+wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/android-9.0.0_r6/clang-4639204.tar.gz && mkdir ${HOME}/clang-4639204 && tar -zxvf clang-4639204.tar.gz -C ${HOME}/clang-4639204 && rm clang-4639204.tar.gz
 
 # AOSP gcc 4.9
-git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 gcc49-64
-git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 gcc49-32
+git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 ${HOME}/gcc49-64
+git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 ${HOME}/gcc49-32
 
 # Setup environment variables
 export KBUILD_BUILD_USER=hendramanu
