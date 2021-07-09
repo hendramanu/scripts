@@ -8,7 +8,7 @@ if [[ -z $CI ]]; then
 fi
 
 # Install packages
-apt-get install -y \
+DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	bison build-essential curl flex \
         git gnupg gperf liblz4-tool \
         libncurses5-dev libsdl1.2-dev \
