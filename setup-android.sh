@@ -41,3 +41,7 @@ wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+a
 # AOSP gcc 4.9
 git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 gcc49-64
 git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 gcc49-32
+
+# Setup environment variables
+export KBUILD_BUILD_USER=hendramanu
+export KBUILD_BUILD_HOST=CircleCI
